@@ -6,23 +6,25 @@ using System.Threading.Tasks;
 
 namespace COMP003A.ZooManagementSystem
 {
+    /// <summary>
+    /// Parrot inherits animal class
+    /// </summary>
     internal class Parrot: Animal
     {
-        public string ParrotName
-        {
-            get; set;
-        }
+       
 
-        public Parrot(string ParrotName, string Name, string Species)
+        public Parrot( string Name, string Species) : base(Name, Species) 
         {
-            ParrotName = ParrotName;
+           
 
         }
-
+        /// <summary>
+        /// Makes the sound for parrot
+        /// </summary>
 
         public override void MakeSound() 
         {
-            Console.WriteLine("The parrot Squawksss!");
+            Console.WriteLine($"The parrot Squawksss!({Name},{Species})");
 
         }
 

@@ -8,23 +8,38 @@ namespace COMP003A.ZooManagementSystem
 {
     internal class zooUtility
     {
+        /// <summary>
+        /// Animal name
+        /// </summary>
+        /// <param name="Name"></param>
 
-        public static void DescribeAnimal(string name)
+
+
+        public static void DescribeAnimal(string Name)
         {
-            Console.WriteLine($"Name: {name}");
+            Console.WriteLine($"Name: {Name}");
         }
 
-
-        public static void DescribeAnimal(string name, string species)
+        /// <summary>
+        /// Animal name, species
+        /// </summary>
+        /// <param name="Name"></param>
+        /// <param name="species"></param>
+        public static void DescribeAnimal(string Name, string species)
         {
-            DescribeAnimal(name);
+            DescribeAnimal(Name);
             Console.WriteLine($"Species: {species}");
         }
 
-
-        public static void DescribeAnimal(string name, string species, int age)
+        /// <summary>
+        /// Animal name,sepcies, age
+        /// </summary>
+        /// <param name="Name"></param>
+        /// <param name="species"></param>
+        /// <param name="age"></param>
+        public static void DescribeAnimal(string Name, string species, int age)
         {
-            DescribeAnimal(name,species);
+            DescribeAnimal(Name,species);
             Console.WriteLine($"Age: {age}");
         }
 
